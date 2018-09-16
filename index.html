@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp hình tròn</title>
+    <script>
+        let Circle = function (radius) {
+            radius;
+            color = "";
+
+            this.getRadius = function() {
+                return radius;
+            };
+
+            this.getArea = function() {
+                return Math.PI * radius * radius;
+            };
+        };
+
+        let circle = new Circle(6);
+        let radius = circle.getRadius();
+        let area = circle.getArea();
+        alert("radius: " + radius + "; area: " + area);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
